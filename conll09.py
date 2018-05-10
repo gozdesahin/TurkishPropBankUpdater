@@ -164,9 +164,7 @@ def getConll09Sents(fIn):
     return allSent
 
 def getConll09SentNoAnnot(fIn):
-    data = getContent(fIn).split("\r\n")
-    if len(data)<=1:
-        data = getContent(fIn).split("\n")
+    data = getContent(fIn).split("\n")
     allSent = []
     ix = 1
     pixCnt = 1

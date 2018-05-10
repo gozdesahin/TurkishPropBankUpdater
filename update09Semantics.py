@@ -16,7 +16,7 @@ def main():
                         help='Türkçe anlamsal etiketlemelerin olduğu dosya')
 
     parser.add_argument('-newIMSTFile', type=str,
-                        default='/media/isguderg/Work/Doktora/Data Sets/Yeni_IMST/imst_son/09/imst141.single.conll',
+                        default='./IO/imst141.single.tree.conll',
                         help='Yeni IMST dosyası')
 
     parser.add_argument('-save_dir', type=str,

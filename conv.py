@@ -7,6 +7,7 @@ import codecs
 def getContent(file_path):
     fin = codecs.open(file_path, encoding='utf-8')
     strIn = fin.read()
+    strIn = strIn.replace('\r\n', '\n')
     fin.close()
     return strIn
 
