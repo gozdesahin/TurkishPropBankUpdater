@@ -96,6 +96,7 @@ class conllUDSent:
         self.args = []
         # conlludrows
         self.rows = []
+        self.colSize = 0
         # multiple span rows
         self.multirows = []
         self.lastDerivIds = []
@@ -218,6 +219,7 @@ def getUDSentAnnot(fIn):
         else:
             # resolve data
             cols = row.split("\t")
+            sent.colSize = len(cols)
             sent.original_lines.append(cols)
             # new row in a sentence
             row = conll09Row(cols[0])
